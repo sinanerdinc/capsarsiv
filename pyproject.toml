@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capsarsiv"
+version = "0.1.0"
+description = "Türkçe Caps Arşivi Python SDK ve CLI aracı"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Sinan Erdinç", email = "sinanerdinc@gmail.com" },
+]
+keywords = ["caps", "capsarsiv", "türkçe", "meme", "cli", "api"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "httpx>=0.27",
+    "click>=8.1",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-httpx>=0.30",
+    "build>=1.0",
+]
+
+[project.scripts]
+capsarsiv = "capsarsiv.cli:main"
+
+[project.urls]
+Homepage = "https://capsarsiv.com"
+Repository = "https://github.com/sinanerdinc/capsarsiv"
+Documentation = "https://capsarsiv.com/developer"
+Issues = "https://github.com/sinanerdinc/capsarsiv/issues"
+
+[tool.setuptools.packages.find]
+include = ["capsarsiv*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
