@@ -1,5 +1,7 @@
 """Capsarsiv API hata sınıfları."""
 
+from __future__ import annotations
+
 
 class CapsArsivError(Exception):
     """Tüm capsarsiv hatalarının temel sınıfı."""
