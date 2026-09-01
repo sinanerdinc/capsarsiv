@@ -134,6 +134,13 @@ with CapsArsiv() as client:
 - Dakikada en fazla **60** istek
 - Aylık **1000** istek (key başına)
 
+
+## Contributors
+
+<a href="https://github.com/sinanerdinc/capsarsiv/graphs/contributors">
+  <img alt="Dify contributors" src="https://contrib.rocks/image?repo=sinanerdinc/capsarsiv" />
+</a>
+
 ## Lisans
 
 MIT — detaylar için [LICENSE](LICENSE) dosyasına bakın.
